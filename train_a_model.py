@@ -44,7 +44,7 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 model.summary()
 
 print("\n開始訓練模型...")
-model.fit(train_images, train_labels, epochs=20, batch_size=128, validation_data=(test_images, test_labels), verbose=1)
+model.fit(train_images, train_labels, epochs=100, batch_size=128, validation_data=(test_images, test_labels), verbose=1)
 
 # === 關鍵：儲存與轉換模型 ===
 print("\n開始儲存與轉換模型...")
